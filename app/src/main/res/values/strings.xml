@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Auth0 Coffees</string>
+    <string name="AUTH0_SCHEME">https</string>
+    <string name="AUTH0_DOMAIN">dev-2er17opo.eu.auth0.com</string>
+    <string name="AUTH0_CLIENT_ID">g0Rm4W8Rauvw4U8J2ji4Gq8Kv1wvCXZV</string>
+    <string name="AUTH0_REDIRECT">com.auth0.androidexercise://universallogin/callback</string>
+    <string name="COFFEE_SERVICE_URL">http://10.0.1.143:3000</string>
+    <string name="API_AUDIENCE">coffee-api</string>
+    <string name="logout_title">Log out</string>
+    <string name="toolbar_string">"%s"</string>
+    <string name="logout_message">Are you sure you want to log out?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="loading">loading...</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="share_coffee">Share coffee</string>
 </resources>
