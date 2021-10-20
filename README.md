@@ -164,6 +164,10 @@ ISSUER_BASE_URL=https://YOUR_AUTH0_DOMAIN/
 
 ## NodeJS
 
+* Express 4.17
+* Morgan 1.10 (for logging purposes only)
+* Body parser 1.19 (for logging purposes only)
+
 # Documentation
 
 ## Table of Content
