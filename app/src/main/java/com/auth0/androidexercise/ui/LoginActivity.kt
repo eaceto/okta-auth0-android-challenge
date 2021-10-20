@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
 
         viewModel.loginState.observe(this) {
             val loginEnabled =
-                it == UniversalLoginState.PENDING || it == UniversalLoginState.LOGGIN_FAILED
+                it == UniversalLoginState.PENDING || it == UniversalLoginState.LOGGIN_FAILED || it == UniversalLoginState.AUTHORIZING
 
             findViewById<Button>(R.id.button_login).isEnabled = loginEnabled
             findViewById<CircularProgressIndicator>(R.id.loading_indicator).visibility = if (loginEnabled) View.INVISIBLE else View.VISIBLE
