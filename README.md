@@ -7,6 +7,14 @@
 <!--ts-->
 * [Challenge objectives](#challenge-objectives)
 * [Key features](#key-features)
+* [Missing features](#missing-features)
+* [Known issues](#known-issues)
+* [Screenshots](#screenshots)
+   * [Login screen](#login-screen)
+   * [External Universal Login](#external-universal-login)
+   * [Loggin in](#loggin-in)
+   * [Main application activity](#main-application-activity)
+   * [Logout alert](#logout-alert)
 * [Requirements](#requirements)
    * [Android](#android)
    * [Node.js](#nodejs)
@@ -20,6 +28,7 @@
    * [Android](#android-1)
    * [NodeJS](#nodejs-2)
 * [Documentation](#documentation)
+   * [Table of Content](#table-of-content)
 <!--te-->
 
 # Challenge objectives
@@ -37,6 +46,35 @@ More information about the challenge objectives can be seen at [here](CHALLENGE.
 * Consumes coffee information from local [Coffee API](rest/README.md)
 * Shares coffee information to 3rd party apps
 * Design two different item views depending on whether the coffee type is “hot” or “iced”
+
+
+# Missing features
+
+* Loading indicator while fetching list of coffees
+* Error handling if there is not internet connection 
+* Error handling if Coffee API is not available
+
+# Known issues
+
+* Android 10 emulator's Web Browser does not allow to delete cookies and session data for the login page manually. Emulator must be wiped out.
+
+# Screenshots
+
+## Login screen
+![plot](./docs/login.png)
+
+## External Universal Login 
+![plot](./docs/universal_login.png)
+
+## Loggin in
+![plot](./docs/loading.png)
+
+## Main application activity
+![plot](./docs/main.png)
+
+
+## Logout alert
+![plot](./docs/logout.png)
 
 
 # Requirements
@@ -127,6 +165,8 @@ ISSUER_BASE_URL=https://YOUR_AUTH0_DOMAIN/
 ## NodeJS
 
 # Documentation
+
+## Table of Content
 
 The index of this document is generated using (GitHub Markdown ToC](https://github.com/ekalinin/github-markdown-toc). Run the following command to update the ToC
 
