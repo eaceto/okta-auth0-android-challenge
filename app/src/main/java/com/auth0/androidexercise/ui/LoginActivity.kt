@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,7 @@ import com.auth0.androidexercise.databinding.ActivityLoginBinding
 import com.auth0.androidexercise.ui.login.universal.AuthorizationResponse
 import com.auth0.androidexercise.ui.login.universal.UniversalLoginState
 import com.auth0.androidexercise.ui.login.universal.UniversalLoginViewModel
+import com.google.android.material.progressindicator.CircularProgressIndicator
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -39,7 +41,9 @@ class LoginActivity : AppCompatActivity() {
         viewModel.loginState.observe(this) {
             val loginEnabled =
                 it == UniversalLoginState.PENDING || it == UniversalLoginState.LOGGIN_FAILED
+
             findViewById<Button>(R.id.button_login).isEnabled = loginEnabled
+            findViewById<CircularProgressIndicator>(R.id.loading_indicator).visibility = if (loginEnabled) View.INVISIBLE else View.VISIBLE
 
             if (it == UniversalLoginState.LOGGED_IN) {
                 showMainActivity()
