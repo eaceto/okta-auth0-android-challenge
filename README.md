@@ -1,7 +1,7 @@
 # Android Technical Exercise
 
 [![License](https://img.shields.io/dub/l/vibe-d.svg?style=flat)](https://opensource.org/licenses/MIT)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/eaceto/okta-auth0-android-challenge?sort=semver)](https://github.com/eaceto/okta-auth0-android-challenge/releases/tag/v1.0.0)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/eaceto/okta-auth0-android-challenge?sort=semver)](https://github.com/eaceto/okta-auth0-android-challenge/releases/tag/v1.0.1)
 
 
 <!--ts-->
