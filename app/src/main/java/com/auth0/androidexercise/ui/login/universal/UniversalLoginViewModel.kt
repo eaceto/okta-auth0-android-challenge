@@ -72,14 +72,15 @@ open class UniversalLoginViewModel @Inject constructor(
                 return@launch
             }
 
-            if (refreshToken.isNullOrBlank()) {
+            if (!refreshToken.isNullOrBlank()) {
                 CoroutineScope(Dispatchers.IO).launch {
-                    val response = oauthTokenRepository.renewAcccessToken(refreshToken!!)
+                    val response = oauthTokenRepository.renewAcccessToken(refreshToken)
                     CoroutineScope(Dispatchers.Main).launch {
                         _loginState.value =
                             if (response is OAuthTokenResponse) UniversalLoginState.LOGGED_IN else UniversalLoginState.LOGGIN_FAILED
                     }
                 }
+                return@launch
             }
 
             CoroutineScope(Dispatchers.Main).launch {
